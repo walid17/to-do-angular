@@ -1,3 +1,4 @@
+/*
 import { Component } from '@angular/core';
 import { TodoDataService } from 'src/app/todo-data.service';
 import { Todo } from 'src/app/todo';
@@ -25,12 +26,12 @@ export class AppComponent implements OnInit {
     );
 }
 
-/*
-addTodo() {
-  this.todoDataService.addTodo(this.newTodo);
-  this.newTodo = new Todo();
-}
-*/
+
+//addTodo() {
+ // this.todoDataService.addTodo(this.newTodo);
+ // this.newTodo = new Todo();
+//}
+
 onAddTodo(todo) {
   this.todoDataService
     .addTodo(todo)
@@ -63,4 +64,15 @@ onRemoveTodo(todo) {
 getTodos() {
   return this.todoDataService.getAllTodos();
 }
+}
+*/
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+
 }
